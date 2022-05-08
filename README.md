@@ -1,2 +1,2 @@
 # ITC
-Introduction To Computing course Assignments 
+Introduction To Computing Course Assignments
