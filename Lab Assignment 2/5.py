@@ -6,7 +6,7 @@ b = float(input('Enter Second side: '))
 c = float(input('Enter Third side: '))
 
 # Converting to integers as said in the Question
-print('Convering Sides to Integer Values...\n')
+print('Converting Sides to Integer Values...\n')
 a = int(a)
 b = int(b)
 c = int(c)
