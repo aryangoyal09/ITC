@@ -7,8 +7,6 @@ Gender = str(input('Enter Gender(F, M, or U for Unknown): '))
 while Gender not in ('F', 'M', 'U'):
     print('Invalid Gender Value, try again\n')
     Gender = str(input('Enter Gender(F, M or U for Unknown): '))
-else:
-    pass
 
 Course_Name = str(input('Enter Course_Name: '))
 CGPA = float(input('Enter CGPA: '))
@@ -17,8 +15,6 @@ CGPA = float(input('Enter CGPA: '))
 while CGPA>10 or CGPA<0:
     print('Invalid CGPA Value, try again\n')
     CGPA = float(input('Enter CGPA: '))
-else:
-    pass
 
 Student = [SID,Name,Gender,Course_Name,CGPA]
 print('Your data is:',Student)
