@@ -1,15 +1,12 @@
-array_size=int(input("Enter size of array: "))
-array=[]
-for i in range(0, array_size):
+array=[int(i) for i in input('Enter elements marks by space: ').split(' ')]
+for i in range(0, len(array)):
     element=int(input("Enter element "))
     array.append(element)
 
-# PART-(a)
-# Sorting the array
 # Selection Sort Algorithm
-for i in range(0, array_size):
+for i in range(0, len(array)):
     min_index=i
-    for j in range(i+1, array_size):
+    for j in range(i+1, len(array)):
         if array[min_index]>array[j]:
             min_index=j # finding minimum element
     array[i], array[min_index]=array[min_index], array[i] # swapping first element with minimum element
@@ -17,7 +14,6 @@ print(array)
 
 x=int(input("Enter element to be searched and counted: "))
 
-# PART-(b)
 # Binary Search Algorithm
 def binary_search(array, x):
     low=0
@@ -25,13 +21,13 @@ def binary_search(array, x):
     mid=0
     while low<=high:
         mid=(high + low)//2
-        if array[mid]<x: # if x is greater than mid element, ignore left half
+        if array[mid]<x:
             low=mid+1
-        elif array[mid]>x: # if x is less than mid element, ignore right half
+        elif array[mid]>x:
             high=mid-1
         else:
-            return mid # this means x is present at mid position
-    return -1 # in this case, x is not present
+            return mid
+    return -1
 
 result=binary_search(array, x)
 if result!=-1:
@@ -39,9 +35,8 @@ if result!=-1:
 else:
     print("Error! Element is not present.")
 
-# PART-(c)
-# Counting occurrences of element
-def count(array, x): # function to count occurrences of element
+# Function to count occurrences of element
+def count(array, x): 
     count=0
     for i in array:
         if i==x:
