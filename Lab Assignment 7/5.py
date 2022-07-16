@@ -1,7 +1,4 @@
 array=[int(i) for i in input('Enter elements marks by space: ').split(' ')]
-for i in range(0, len(array)):
-    element=int(input("Enter element "))
-    array.append(element)
 
 # Selection Sort Algorithm
 for i in range(0, len(array)):
