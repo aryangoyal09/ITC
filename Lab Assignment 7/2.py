@@ -4,9 +4,10 @@ from calendar import *
 root = Tk()
 root.title("Calendar")
 
-# Creating year entry
+# Creating entries, labels, textbox
 Label1 = Label(root, text="Enter year")
 Year_entry = Entry(root)
+textbox = Text(root)
 
 # Packing Entries and Labels
 Label1.pack()
@@ -21,7 +22,5 @@ def print_calendar():
 
 Button1 = Button(root, text = "Show", command=print_calendar)
 Button1.pack()
-
-textbox = Text(root)
 
 root.mainloop()
