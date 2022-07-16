@@ -1,3 +1,6 @@
+array=[int(i) for i in input('Enter elements marks by space: ').split(' ')]
+
+# Defining selection sort
 def selection_sort(array):  
     length = len(array)  
       
@@ -11,6 +14,8 @@ def selection_sort(array):
         array[i], array[minIndex] = array[minIndex], array[i]  
           
     return array
+
+# Defining Bubble sort
 def bubbleSort(arr):
     n = len(arr)
     swapped = False
