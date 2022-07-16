@@ -17,11 +17,11 @@ def print_calendar():
     Calendar_of_year = calendar(Year)
     textbox.delete(0.0, END)
     textbox.insert(INSERT, Calendar_of_year)
+    textbox.pack()
 
 Button1 = Button(root, text = "Show", command=print_calendar)
 Button1.pack()
 
 textbox = Text(root)
-textbox.pack()
 
 root.mainloop()
