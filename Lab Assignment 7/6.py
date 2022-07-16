@@ -26,12 +26,7 @@ def bubbleSort(arr):
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
         if not swapped:
             return
-n=int(input("Enter number of inputs:"))
-l=[]
-for i in range(0,n):
-    s=int(input("Enter number:"))
-    l.append(s)
-l=set(l)
-l=list(l)
-l.sort()
-print(l)
+array=set(array)
+array=list(array)
+array.sort()
+print(array)
